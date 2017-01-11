@@ -50,16 +50,23 @@ my_hero = {:name => "Legolas", :race => "elf", :weapons => ["bow", "knife"]}
 
 # 1. Get the hero's name
 
-puts "#{my_hero[:name]}"
+# puts "#{my_hero[:name]}"
 
 # 2. Get the hero's race
 
+# puts "#{my_hero[:race]}"
+
 # 3. Get the hero's first weapon
+
+# puts "#{my_hero[:weapons][0]}"
 
 # 4. Get the hero's second weapon
 
+# puts "#{my_hero[:weapons][-1]}"
+
 # 5. Get the number of weapons the hero has
 
+for num in my_hero
 
 
 ## C. Given the following data structure:
