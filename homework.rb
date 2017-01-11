@@ -66,7 +66,7 @@ my_hero = {:name => "Legolas", :race => "elf", :weapons => ["bow", "knife"]}
 
 # 5. Get the number of weapons the hero has
 
-for num in my_hero
+  # puts.length[:weapons] **STILL TO SOLVE**
 
 
 ## C. Given the following data structure:
@@ -80,10 +80,30 @@ big_animals = [
 
 #1. Print the names of all the big animals
 
+# puts big_animals[:name]
+
+# for names in big_animals
+#   puts "#{names[:name]}"
+# end
+
 #2. Find the weight of a Blue Whale.
+
+# for whale in big_animals ** STILL TO SOLVE**
+#   puts "#{whale[:name]} is #{whale[:weight]}"
+
+#   if (whale[:name] == "Blue Whale" && [:weight] == 140000)
+#     puts "#{whale[:name]} is #{whale[:weight]}"
+#   end
+# end
+
 
 #3. Create an array of the big animals that are carnivores.
 
+# for animals in big_animals
+#   if (animals[:carnivore] == true)
+#     puts "#{animals[:name]}"
+#   end
+# end
 
 
 ## Extra. Given the following data structure:
@@ -121,6 +141,16 @@ users = {
 }
 
 # 1. Return Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
+
+def johnny( array, username)
+  for twit_hand in array
+    if twit_hand[:twitter] == username
+      return "#{twit_hand[:twitter]}"
+    end
+  end
+end
+
+puts johnny(users, "jonnyt")
 
 # 2. Return Erik's hometown
 
